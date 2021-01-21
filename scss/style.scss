@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+// @import "matrix-a";
+
+body {
+  background-color: gainsboro;
+}
+
+header {
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  // border-bottom: 1px solid rgba(68, 62, 62, 0.185);
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  border-radius: 10px;
+
+  .container {
+    box-shadow: 5px 10px 18px #888888;
+
+    h2 {
+      margin-top: 1rem;
+    }
+
+    select {
+      margin: 1rem;
+      padding: 5px 5px;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .matrix-a {
+    grid-column: 1/4;
+    // margin-left: 5rem;
+    text-align: center;
+
+    input[type="text"] {
+      width: 20%;
+      padding: 5px 5px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+  }
+  .matrix-b {
+    grid-column: 4/7;
+    // margin-right: 5rem;
+    text-align: center;
+
+    input[type="text"] {
+      width: 20%;
+      padding: 5px 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .operation {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: 1/7;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    .btnAddition {
+      grid-column: 1/4;
+    }
+    .btnSubtract {
+      grid-column: 4/7;
+    }
+    .btnMultiply {
+      grid-column: 1/4;
+      grid-row: 2;
+    }
+    .btnClear {
+      grid-column: 4/7;
+      grid-row: 2;
+    }
+
+    button {
+      padding: 0.8rem;
+      margin: 2px 1.5rem;
+      font-weight: bold;
+      font-size: large;
+      cursor: pointer;
+    }
+  }
+
+  .hidden-a,
+  .hidden {
+    display: none;
+  }
+}

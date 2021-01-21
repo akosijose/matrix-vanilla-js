@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Matrices App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Matrix</h1>
+    </header>
+    <main>
+      <div class="container grid">
+        <div class="matrix-a">
+          <h2>Matrix A</h2>
+          <!-- dropdown -->
+          <select id="matrix-a">
+            <option selected>Select Row's & Column's</option>
+            <option value="2x2">2x2</option>
+            <option value="2x3">2x3</option>
+            <option value="2x4">2x4</option>
+            <option value="3x2">3x2</option>
+            <option value="3x3">3x3</option>
+            <option value="3x4">3x4</option>
+            <option value="4x2">4x2</option>
+            <option value="4x3">4x3</option>
+            <option value="4x4">4x4</option>
+          </select>
+          <br />
+
+          <!-- row 1 -->
+          <input class="menu-items hidden-a" type="text" id="a-row1-col1" />
+          <input class="menu-items hidden-a" type="text" id="a-row1-col2" />
+          <input class="menu-items hidden-a" type="text" id="a-row1-col3" />
+          <input class="menu-items hidden-a" type="text" id="a-row1-col4" />
+          <br />
+
+          <!-- row 2 -->
+          <input class="menu-items hidden-a" type="text" id="a-row2-col1" />
+          <input class="menu-items hidden-a" type="text" id="a-row2-col2" />
+          <input class="menu-items hidden-a" type="text" id="a-row2-col3" />
+          <input class="menu-items hidden-a" type="text" id="a-row2-col4" />
+          <br />
+
+          <!-- row 3 -->
+          <input class="menu-items hidden-a" type="text" id="a-row3-col1" />
+          <input class="menu-items hidden-a" type="text" id="a-row3-col2" />
+          <input class="menu-items hidden-a" type="text" id="a-row3-col3" />
+          <input class="menu-items hidden-a" type="text" id="a-row3-col4" />
+          <br />
+
+          <!-- row 4 -->
+          <input class="menu-items hidden-a" type="text" id="a-row4-col1" />
+          <input class="menu-items hidden-a" type="text" id="a-row4-col2" />
+          <input class="menu-items hidden-a" type="text" id="a-row4-col3" />
+          <input class="menu-items hidden-a" type="text" id="a-row4-col4" />
+          <br />
+        </div>
+
+        <div class="matrix-b">
+          <h2>Matrix B</h2>
+          <!-- dropdown -->
+          <select id="matrix-b">
+            <option selected>Select Row's & Column's</option>
+            <option value="2x2">2x2</option>
+            <option value="2x3">2x3</option>
+            <option value="2x4">2x4</option>
+            <option value="3x2">3x2</option>
+            <option value="3x3">3x3</option>
+            <option value="3x4">3x4</option>
+            <option value="4x2">4x2</option>
+            <option value="4x3">4x3</option>
+            <option value="4x4">4x4</option>
+          </select>
+          <br />
+          <!-- row 1 -->
+          <input class="menu-itemsB hidden" type="text" id="b-row1-col1" />
+          <input class="menu-itemsB hidden" type="text" id="b-row1-col2" />
+          <input class="menu-itemsB hidden" type="text" id="b-row1-col3" />
+          <input class="menu-itemsB hidden" type="text" id="b-row1-col4" />
+          <br />
+
+          <!-- row 2 -->
+          <input class="menu-itemsB hidden" type="text" id="b-row2-col1" />
+          <input class="menu-itemsB hidden" type="text" id="b-row2-col2" />
+          <input class="menu-itemsB hidden" type="text" id="b-row2-col3" />
+          <input class="menu-itemsB hidden" type="text" id="b-row2-col4" />
+          <br />
+
+          <!-- row 3 -->
+          <input class="menu-itemsB hidden" type="text" id="b-row3-col1" />
+          <input class="menu-itemsB hidden" type="text" id="b-row3-col2" />
+          <input class="menu-itemsB hidden" type="text" id="b-row3-col3" />
+          <input class="menu-itemsB hidden" type="text" id="b-row3-col4" />
+          <br />
+
+          <!-- row 4 -->
+          <input class="menu-itemsB hidden" type="text" id="b-row4-col1" />
+          <input class="menu-itemsB hidden" type="text" id="b-row4-col2" />
+          <input class="menu-itemsB hidden" type="text" id="b-row4-col3" />
+          <input class="menu-itemsB hidden" type="text" id="b-row4-col4" />
+          <br />
+        </div>
+        <!-- operation -->
+        <div class="operation">
+          <button class="btnAddition" id="btnAddition">Addition</button>
+          <button class="btnSubtract" id="btnSubtract">Subtraction</button>
+          <button class="btnMultiply" id="btnMultiply">Multiplication</button>
+          <button class="btnClear" id="btnClear">Clear</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

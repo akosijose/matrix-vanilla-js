@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+header {
+  padding: 1rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 700px;
+}
+
+header h2 {
+  margin-bottom: 1rem;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+
+main .container {
+  -webkit-box-shadow: 5px 10px 18px #888888;
+          box-shadow: 5px 10px 18px #888888;
+}
+
+main .container h2 {
+  margin-top: 1rem;
+}
+
+main .container select {
+  margin: 1rem;
+  padding: 5px 5px;
+}
+
+main .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+main .matrix-a {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  text-align: center;
+}
+
+main .matrix-a input[type="text"] {
+  width: 20%;
+  padding: 5px 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+main .matrix-b {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4/7;
+  text-align: center;
+}
+
+main .matrix-b input[type="text"] {
+  width: 20%;
+  padding: 5px 5px;
+  margin-bottom: 5px;
+}
+
+main .operation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+main .operation .btnAddition {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+main .operation .btnSubtract {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4/7;
+}
+
+main .operation .btnMultiply {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+main .operation .btnClear {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4/7;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+main .operation button {
+  padding: 0.8rem;
+  margin: 2px 1.5rem;
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+}
+
+main .hidden-a,
+main .hidden {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
