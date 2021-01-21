@@ -2,9 +2,6 @@ const selectA = document.getElementById("matrix-a");
 const selectB = document.getElementById("matrix-b");
 const menuItems = document.querySelectorAll(".menu-items");
 const menuItemsB = document.querySelectorAll(".menu-itemsB");
-const btnAddition = document.getElementById("btnAddition");
-const btnSubtract = document.getElementById("btnSubtract");
-const btnMultiply = document.getElementById("btnMultiply");
 
 // matrix A
 selectA.addEventListener("change", (e) => {
