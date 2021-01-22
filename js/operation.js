@@ -95,8 +95,8 @@ const clearText = [
   b_row4_col4,
 ];
 
-btnClear.addEventListener("click", () => {
-  clearText.forEach(function (cleared) {
+btnClear.addEventListener("click", (e) => {
+  clearText.forEach((cleared) => {
     cleared.value = null;
   });
 });
